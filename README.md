@@ -1,9 +1,9 @@
 # User, Role & Permission REST API
 
-Spring Boot 4 · Java 25 · PostgreSQL · Spring Security (JWT access + refresh) · Flyway · MapStruct · Swagger
+Spring Boot 4 · Java 21 · PostgreSQL · Spring Security (JWT access + refresh) · Flyway · MapStruct · Swagger
 
 ## Prerequisites
-- JDK 25, Maven 3.9+, PostgreSQL 15+
+- JDK 21, Maven , PostgreSQL
 
 ## Configuration (environment variables)
 
@@ -16,7 +16,7 @@ Spring Boot 4 · Java 25 · PostgreSQL · Spring Security (JWT access + refresh)
 | `ADMIN_NICK_NAME` | no | default `Administrator` |
 
 ```bash
-createdb rbac_db
+createdb pro24_group9db
 export JWT_SECRET='change-me-to-a-long-random-string-of-32+chars'
 export ADMIN_USERNAME=admin ADMIN_PASSWORD='Admin@12345'
 mvn spring-boot:run
